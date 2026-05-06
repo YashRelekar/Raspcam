@@ -19,6 +19,12 @@ Captures frames via `picamera2`, detects facial expressions with the
 OpenCV preview window with bounding boxes and dominant emotion labels in
 real time.
 
+### `preview_and_emotion.py`
+
+Combines both scripts above: opens a **Qt preview window** showing the raw
+camera feed *and* a separate **OpenCV window** with face bounding boxes and
+dominant emotion labels — both driven by the same camera simultaneously.
+
 ---
 
 ## Requirements
@@ -64,3 +70,13 @@ python3 emotion_detection.py
 ```
 
 Press **`q`** in the preview window, or **Ctrl+C** in the terminal, to stop.
+
+### Qt preview + emotion detection (combined)
+
+```bash
+python3 preview_and_emotion.py
+```
+
+Opens a Qt-based raw camera preview **and** an OpenCV emotion-detection
+window simultaneously.  Press **`q`** in the OpenCV window, or **Ctrl+C**
+in the terminal, to stop both windows cleanly.
