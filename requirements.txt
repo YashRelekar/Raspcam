@@ -1,0 +1,8 @@
+# Runtime dependencies for Raspcam
+#
+# System packages (install once with apt):
+#   sudo apt install -y python3-picamera2 python3-opencv python3-pyqt5
+#
+# Python packages (install with pip):
+fer>=22.5.1
+tensorflow>=2.13.0
